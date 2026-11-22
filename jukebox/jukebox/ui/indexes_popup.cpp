@@ -84,7 +84,7 @@ void IndexesPopup::createList() {
     if (m_list) { m_list->removeFromParent(); }
 
     m_list = ScrollLayer::create({size.width - (s_padding * 2), size.height - (s_padding * 2) - 4.f});
-    m_list->setPosition({s_padding, s_padding + 2.f});
+    m_list->setPosition(size / 2);
 
     for (int i = 0; i < m_indexes.size(); i++) {
         auto* const cell = IndexCell::create(
