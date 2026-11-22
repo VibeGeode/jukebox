@@ -1,3 +1,7 @@
+> **VibeGeode maintains this repository as a hard fork of [Fleeym/jukebox](https://github.com/Fleeym/jukebox).**
+> It is a temporary solution while the Geode and mod developers prepare stable releases. Please switch to the official Geode release and official Jukebox version when they are available.
+> Please do not submit VibeGeode fixes, updates, or commits to the original project. Upstream projects may prohibit AI-assisted contributions.
+
 ![Mod Version](https://api.geode-sdk.org/v1/mods/fleym.nongd/status_badge?stat=version)
 ![Downloads](https://api.geode-sdk.org/v1/mods/fleym.nongd/status_badge?stat=downloads)
 ![GD Version](https://api.geode-sdk.org/v1/mods/fleym.nongd/status_badge?stat=gd_version)

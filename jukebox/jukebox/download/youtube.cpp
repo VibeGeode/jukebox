@@ -1,7 +1,6 @@
 #include "jukebox/download/youtube.hpp"
 
 #include <algorithm>
-#include <chrono>
 #include <string>
 #include <utility>
 
@@ -57,7 +56,7 @@ web::WebFuture getMetadata(const std::string& id) {
     timeout = std::max(timeout, 30);
 
     return web::WebRequest()
-        .timeout(std::chrono::seconds(timeout))
+        .timeout(asp::Duration::fromSecs(static_cast<asp::u64>(timeout)))
         .bodyJSON(
             matjson::makeObject({
                 {"url", fmt::format("https://www.youtube.com/watch?v={}", id)},
